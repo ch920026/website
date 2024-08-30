@@ -8,6 +8,7 @@ photo: Ni Hao, Chen Hsi
 size: 1.5 x 1.5 x 1 m
 link: https://haoni.art/
 artistSite: https://haoni.art/
+password: test
 description: |
   Vicious Circularity is an ongoing art project by artist Ni Hao. Part of the project features four scooters spinning in place, controlled remotely without riders.
 tags:

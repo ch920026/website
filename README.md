@@ -10,7 +10,11 @@ npm create astro@latest -- --template portfolio
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+<<<<<<< HEAD
 ![portfolio](public/home.png)
+=======
+![portfolio]<public/home>)
+>>>>>>> parent of cf7891f (Update README.md)
 
 ## 🧞 Commands
 

@@ -21,14 +21,20 @@ export async function getStaticPaths() {
   return work.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
+
   }));
+
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const elem = document.getElementById("para");
+var a=entry.data.password;
+
+// const elem = document.getElementById("para");
 
 ---
+
+
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
 
@@ -86,8 +92,32 @@ const elem = document.getElementById("para");
           </WorkTitle>
         </div>
       </header>
-
-      <main class="wrapper">
+      <div id="Auth" style="display:none">
+        <div class="passtext">
+        This project hasn't been published yet. Please enter the code to access the content.
+        </div>
+        <div class="inputBox">
+        <input
+          id="password"
+          class="password"
+      
+          placeholder="Enter password"
+          type="text"
+          autocomplete="off"
+          autofocus
+        />
+        <button
+          id="password-btn"
+          class="bg-skin-full rounded-md
+          border border-skin-fill border-opacity-50 p-2
+          text-skin-base
+          hover:border-skin-accent"
+        >
+          Submit
+        </button>
+        </div>
+      </div>
+      <main class="wrapper" id="hide">
         <div id="pass">
         <div class="stack gap-10 content">
           {
@@ -107,7 +137,9 @@ const elem = document.getElementById("para");
               </div>
             )
           }
+         
           <div class="content">
+
             <Content />
           </div>
         </div>
@@ -118,7 +150,55 @@ const elem = document.getElementById("para");
 
   </div>
 </BaseLayout>
+<script>
+  
+import { md5 } from 'js-md5';
+var authList={"circularity":true,};
+function prepare() {
 
+    const input = document.getElementById("password");
+    const passwordSection= document.getElementById("Auth");
+    const btn = document.getElementById("password-btn");
+    const wrap =document.getElementById("hide");
+    const article =document.getElementById("pass");
+    const href=window.location.href.split("/").pop();
+
+   if(authList[href]){
+      article.remove();
+      passwordSection.style.display = "Flex";
+    }
+    else{
+      passwordSection.remove();
+    }
+
+  input?.addEventListener("keydown", async (event) => {
+  if (event.key === "Enter") {
+    // Trigger the same functionality as the button click
+    btn?.click(); // Simulate a button click
+    // Add your async logic here
+  }
+});
+    btn?.addEventListener("click", async () => {
+      const password = input.value;
+      const hash=md5(password);
+      try {
+
+       if(hash=="fc9dd304468e3bedac00efbe78bbef85"){
+        passwordSection.remove();
+        wrap.append(article);
+      }
+      else{
+        alert('wrong code');
+      }
+      } catch (e) {
+        alert("Incorrect password");
+      }
+    });
+  }
+
+  prepare();
+  document.addEventListener("astro:after-swap", prepare);
+  </script>
 <style>
   header {
     padding-bottom: 2.5rem;
@@ -133,6 +213,55 @@ const elem = document.getElementById("para");
   position: relative;
   text-decoration: none;
 }
+#Auth {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 50vh; /* Full height of the viewport */
+  text-align: center; /* Center the text inside the container */
+  background-color: transparent; 
+
+}
+
+.passtext {
+  margin-bottom: 10px; /* Add some space between the text and input */
+  font-size: 25px; /* Adjust the font size */
+  color: var(--gray-0);
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column; /* Stack input and button vertically */
+  align-items: center; /* Center them horizontally */
+}
+
+input.password {
+  background-color: transparent;
+  border: 2px solid #e25509; /* Semi-transparent border */
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--gray-0);
+  outline: none;
+  margin-bottom: 15px; /* Space between input and button */
+  text-align: center; /* Center the placeholder text */
+}
+
+button#password-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#password-btn:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
 
 a:hover::after {
   content: "";
