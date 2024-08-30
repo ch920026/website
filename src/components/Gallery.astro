@@ -1,0 +1,28 @@
+---
+interface Props {
+  variant?: "offset" | "small";
+}
+
+const { variant } = Astro.props;
+---
+
+<div
+  class:list={[
+    "grid",
+    { offset: variant === "offset", small: variant === "small" },
+  ]}
+>
+  <slot />
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    gap: 0.1rem;
+    list-style: none;
+    padding: 0;
+    grid-column: span 1;
+  }
+
+  /* If last row contains only one item, make it span both columns. */
+</style>

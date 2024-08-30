@@ -10,6 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.3.2"
+    "@react-three/fiber": "^8.15.16",
+    "@types/three": "^0.161.2",
+    "astro": "^4.3.2",
+    "install": "^0.13.0",
+    "npm": "^10.4.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.161.0"
   }
 }

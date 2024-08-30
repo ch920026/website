@@ -1,120 +1,143 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout title="About | Chen Hsi" description="About Chen Hsi">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Hi, this is me. You can read below to learn more!"
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/profile.jpg"
+          alt="Chen Hsi "
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">About</h2>
+        <div class="content">
+          <p>
+            Creative developer and installation engineer based in Taiwan, born
+            in 1996. Graduated from the Department of Electrical Engineering at
+            National Taiwan University. For the past few years, I have worked as
+            an engineer at the art installation company WHYIXD and have also
+            designed control systems for many artists' installations.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Academic</h2>
+        <div class="content">
+          <p>
+            2015-2020 Bachelor of Electrical Engineering National Taiwan
+            University
+          </p>
+          <p>
+            2019-2021 Networking and Multimedia Lab National Taiwan University
+          </p>
 
-		<ContactCTA />
-	</div>
+          <p>
+            2020 Published “Towards Cost Effective Server Population Estimation:
+            A Case Study of Twitch” WWW Conference
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Work</h2>
+        <div class="content">
+          <p>2022/3-2023/12 WHYIXD Engineer</p>
+          <p>2021/9-2021/12 Noise Kitchen Intern</p>
+
+          <p>2019/7-2020/7 Cresendo Lab Intern</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Joined Work</h2>
+        <div class="content">
+          <p>2024 CHOU TAI CHUN 48x48 GAYA's Universe, Hualien</p>
+          <p>2024 Hsiangfu CHEN Customized Furniture, Taipei</p>
+          <p>
+            2024 Acoustic Mirror by 404 nf. Yue-Jing Lantern Festival, Tainan
+          </p>
+          <p>
+            2022 The Lathery Enfold by Hao Ni Liste Art Fair Basel, Switzerland
+          </p>
+          <p>
+            2022 Nothing to look for, how about you? by Yang Jie-Huai Next Art
+            Tainan ,Tainan
+          </p>
+          <p>
+            2021 Game of Life by Tim Wei 《LIVES: Life, Survival, Living》 Jut
+            Art Museum, Taipei
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>

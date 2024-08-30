@@ -1,0 +1,83 @@
+---
+import Nav from "../components/Nav.astro";
+import MainHead from "../components/MainHead.astro";
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+import CallToAction from "../components/CallToAction.astro";
+import Icon from "../components/Icon.astro";
+import PillBut from "../components/PillBut.astro";
+const { title, description } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<MainHead title={title} description={description} />
+	</head>
+
+	<body >
+		<main>
+		<div id="container"></div>
+
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			attribute float size;
+			uniform float time;
+			uniform float angle;
+			uniform float ratio;
+
+			attribute vec3 customColor;
+     		attribute float off;
+			 attribute float alp;
+      	
+			varying vec3 vColor;
+
+			void main() {
+
+				vColor = customColor;
+
+				vec4 t=vec4(2.0*sin(angle+off)+1.5,sin(alp)+0.0,cos(angle+off)-1.0,0.0)*350.0;
+      
+				vec4 cPosition=(vec4( position, 1.0 )*(ratio)+t*time);
+				vec4 mvPosition = modelViewMatrix * cPosition;
+
+				gl_PointSize = size * ( 800.0 / -mvPosition.z );
+
+				gl_Position = projectionMatrix *mvPosition;
+
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform vec3 color;
+			uniform sampler2D pointTexture;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				gl_FragColor = vec4( color * vColor, 1.0 );
+				gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+			}
+
+		</script>
+
+			<canvas id="bg"></canvas>
+			<script src="../scripts/test.js" ></script>
+			<div style="display: flex; align-items: flex-end; justify-content: center; height: 100%;">
+			<div id="showAfter" class="float roles" style=" width:100%; margin-top:680px; height:200px; padding:0 10%;">
+						<PillBut  href="/landing/">Home</PillBut>
+						<PillBut  href="/work/">Work</PillBut>
+						<PillBut  href="/about/">About</PillBut>
+				</div>
+	
+			</div>
+		<main>
+		
+	</body>
+
+</html>
