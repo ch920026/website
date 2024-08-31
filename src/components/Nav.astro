@@ -5,10 +5,10 @@ import type { iconPaths } from "./IconPaths";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
-  { label: "Work", href: "/work/" },
-  { label: "Creative Coding", href: "/coding/" },
-  { label: "About", href: "/about/" },
+  { label: "Home", href: "/website/" },
+  { label: "Work", href: "/website/work/" },
+  { label: "Creative Coding", href: "/website/coding/" },
+  { label: "About", href: "/website/about/" },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -27,7 +27,7 @@ const iconLinks: {
 
 <nav>
   <div class="menu-header">
-    <a href="/" class="site-title">
+    <a href="/website/" class="site-title">
       <Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" />
       Chen Hsi
     </a>
@@ -52,7 +52,7 @@ const iconLinks: {
                 {
                   active:
                     Astro.url.pathname === href ||
-                    (href !== "/" && Astro.url.pathname.startsWith(href)),
+                    (href !== "/website/" && Astro.url.pathname.startsWith(href)),
                 },
               ]}
               href={href}
@@ -90,7 +90,7 @@ const iconLinks: {
                 {
                   active:
                     Astro.url.pathname === href ||
-                    (href !== "/" && Astro.url.pathname.startsWith(href)),
+                    (href !== "/website/" && Astro.url.pathname.startsWith(href)),
                 },
               ]}
               href={href}
