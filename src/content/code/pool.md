@@ -3,7 +3,7 @@ title: Pool
 artist: WHYIXD
 publishDate: 2022-07-02 00:00:00
 photography:
-img: /assets/code/pool/pool.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/code/pool/pool.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 photo: YHLAA
 size: 7 x 5 x 7 m
@@ -37,11 +37,11 @@ tags:
 <div class="gallery" style="    margin-top:0px;">
 
 <div class="height  withTitle">
-<img style=""src="/assets/code/pool/pool2.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/code/pool/pool2.gif">
 </div>
 
 <div class="height  withTitle">
-<img style=""src="/assets/code/pool/pool1.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/code/pool/pool1.gif">
 </div>
 
 </div>

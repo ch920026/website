@@ -1,49 +1,50 @@
 [
   {
-    "img": "/assets/code/mountain/mountain.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/mountain/mountain.png",
     "url": "mountain"
-  },{
-    "img": "/assets/code/fluidball/fluid.png",
+  },
+  {
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/fluidball/fluid.png",
     "url": "fluid"
   },
   {
-    "img": "/assets/code/tile/tile1.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/tile/tile1.png",
     "url": "tile"
   },
   {
-    "img": "/assets/code/cell.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/cell.png",
     "url": "cell"
   },
   {
-    "img": "/assets/code/tv.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/tv.png",
     "url": "noise"
   },
   {
-    "img": "/assets/code/sea.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/sea.png",
     "url": "sea"
   },
   {
-    "img": "/assets/code/pool/pool.jpg",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/pool/pool.jpg",
     "url": "pool"
   },
   {
-    "img": "/assets/code/orange.jpg",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/orange.jpg",
     "url": "point"
   },
   {
-    "img": "/assets/code/topo.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/topo.png",
     "url": "galaxy"
   },
   {
-    "img": "/assets/code/galaxy.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/galaxy.png",
     "url": "galaxy"
   },
   {
-    "img": "/assets/code/worm.png",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/worm.png",
     "url": "worm"
   },
   {
-    "img": "/assets/code/reflect/reflect.jpg",
+    "img": "https://storage.cloud.google.com/profolio_media/public/assets/code/reflect/reflect.jpg",
     "url": "reflect"
   }
 ]

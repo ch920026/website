@@ -2,7 +2,7 @@
 title: GIMA Ceremony
 artist: WHYIXD
 publishDate: 2023-10-02 00:00:00
-img: /assets/GIMA.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/GIMA.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 photo: Provided by GIMA
 client: Coolermaster
@@ -51,49 +51,49 @@ In this edition, Channels was invited to the Taiwan Golden Indie Music Award, th
 
 <div class="height  withTitle">
 <span class="imgTitle">Control Panel</span>
-<img style=""src="/assets/GIMA/control.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/control.jpg">
 </div>
 
 <div class="width  withTitle">
 <span class="imgTitle">Simulation</span>
-<img style=""src="/assets/GIMA/simu.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/simu.jpg">
 </div>
 
 <div class="height ">
 <span class="imgTitle"></span>
-<img style=""src="/assets/GIMA/motion.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/motion.gif">
 </div>
 
 <div class="height ">
 <span class="imgTitle"></span>
-<img style=""src="/assets/GIMA/p0.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/p0.jpg">
 </div>
 
 <div class="height">
 <span class="imgTitle"></span>
-<img style=""src="/assets/GIMA/m1.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/m1.gif">
 
 </div>
 
 <div class="" style="grid-column :span 3;">
 <span class="imgTitle"></span>
-<img src="/assets/GIMA/motionall.gif">
+<img src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/motionall.gif">
 
 </div>
 
 <div class="height  withTitle">
-<img style=""src="/assets/GIMA/p1.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/p1.jpg">
 </div>
 <div class="width " >
-<img style=""src="/assets/GIMA/show4.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/show4.jpg">
 </div>
 
 <div class="width " >
-<img style=""src="/assets/GIMA/show3.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/show3.jpg">
 </div>
 
 <div class="height  withTitle">
-<img style=""src="/assets/GIMA/me.png">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/GIMA/me.png">
 </div>
 
 </div>

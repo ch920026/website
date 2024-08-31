@@ -3,7 +3,7 @@ title: Emoji board
 artist: 64 Pan, Chen Hsi
 publishDate: 2024-07-02 00:00:00
 photography:
-img: /assets/keyboard/ren.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/keyboard/ren.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 photo: YHLAA
 size: 7 x 5 x 7 m
@@ -56,10 +56,10 @@ Each flower is controlled by a microcontroller and receives signals via Wi-Fi. S
 
 <div class="array"style="margin:50px 0px 0px 0px;">
   <div class="arrayItem"  >
-  <img src="/assets/Cooler/simu1.jpg" style="height:280px; margin:5px;"/>
-    <img src="/assets/Cooler/flower.jpg" style="height:280px; margin:5px;"/> 
+  <img src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/simu1.jpg" style="height:280px; margin:5px;"/>
+    <img src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/flower.jpg" style="height:280px; margin:5px;"/> 
       
-   <img src="/assets/Cooler/panel.jpg" style="height:280px; margin:5px;"/>
+   <img src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/panel.jpg" style="height:280px; margin:5px;"/>
   </div>
 </div>
 Control Panel and Simulation
@@ -72,26 +72,26 @@ Each hour, the show begins with the flowers blooming in monochromatic and random
 
 <div class="height  withTitle">
 <span class="imgTitle">Simulation</span>
-<img style=""src="/assets/Cooler/simu.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/simu.gif">
 </div>
 
 <div class="height  withTitle">
 <span class="imgTitle">Interactive Panel</span>
-<img style=""src="/assets/Cooler/information.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/information.jpg">
 </div>
 
 <div class="height  withTitle">
 <span class="imgTitle">Interactive Panel</span>
-<img style=""src="/assets/Cooler/size.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/size.jpg">
 </div>
 
 <div class="height  withTitle">
 <span class="imgTitle">Module Test</span>
-<img style=""src="/assets/Cooler/test.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/test.gif">
 </div>
 
 <div class="width " >
-<img style=""src="/assets/Cooler/installation.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/Cooler/installation.jpg">
 </div>
 
 </div>

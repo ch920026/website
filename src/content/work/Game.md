@@ -2,7 +2,7 @@
 title: Game of Life
 artist: Tim Wei
 publishDate: 2022-02-02 00:00:00
-img: /assets/game/done.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/game/done.jpg
 img_alt: flower
 photo: Took in museum
 size: 1.5*1.5*0.5 m
@@ -25,49 +25,49 @@ Technically, the challenging aspect is that all 169 cubes are equipped with sens
 
 <div class="height withTitle" >
 <span class="imgTitle">PCB Design</span>
-<img style=""src="/assets/game/pcb.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/pcb.jpg">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">PCB Design</span>
-<img style=""src="/assets/game/brd.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/brd.jpg">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Mosfet Matrix</span>
-<img style=""src="/assets/game/pcb2.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/pcb2.jpg">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Mechanical Structure</span>
-<img style=""src="/assets/game/nake.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/nake.jpg">
 
 </div>
 <div class="height withTitle" >
 <span class="imgTitle">Wiring</span>
-<img style=""src="/assets/game/wire2.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/wire2.jpg">
 
 </div>
 <div class="height withTitle" >
 <span class="imgTitle">In Progress</span>
-<img style=""src="/assets/game/work.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/work.jpg">
 
 </div>
 
 <div class="height" >
-<img style=""src="/assets/game/close.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/close.jpg">
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Touch Sensing</span>
-<img style=""src="/assets/game/touch.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/touch.gif">
 </div>
 
 <div class="height " >
-<img style=""src="/assets/game/show.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/game/show.gif">
 </div>
 
 </div>

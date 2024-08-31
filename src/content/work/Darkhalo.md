@@ -2,7 +2,7 @@
 title: DarkHalo
 artist: Hellobast
 publishDate: 2023-05-02 00:00:00
-img: /assets/dark/installation.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/dark/installation.jpg
 img_alt: flower
 photo: ChenHsi
 size: 1.5*1.5*0.5 m
@@ -21,40 +21,40 @@ Dark Halo is a light installation designed by the French artist team helloBast. 
 
 <div class="height withTitle" >
 <span class="imgTitle">Control Panel Image Sampling</span>
-<img style=""src="/assets/dark/dark.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/dark.gif">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Program Simulation</span>
-<img style=""src="/assets/dark/darkSimu.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/darkSimu.gif">
 
 </div>
 
 <div class="height " >
-<img style=""src="/assets/dark/work.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/work.jpg">
 </div>
 
 <div class="heigh" >
-<img style=""src="/assets/dark/work2.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/work2.jpg">
 </div>
 
 <div class="height " >
-<img style=""src="/assets/dark/work1.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/work1.jpg">
 </div>
 <div class="height" >
-<img style=""src="/assets/dark/artist.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/artist.jpg">
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Real Effect</span>
-<img style=""src="/assets/dark/effect.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/effect.gif">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Real Effect</span>
-<img style=""src="/assets/dark/show.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/dark/show.gif">
 </div>
 
 </div>

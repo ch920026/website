@@ -2,7 +2,7 @@
 title: Tender Soul of Ocean
 artist: WHYIXD
 publishDate: 2022-06-09 00:00:00
-img: /assets/tender/ocean.jpg
+img: https://storage.cloud.google.com/profolio_media/public/assets/tender/ocean.jpg
 photo: Yuchen Chao Photography
 size: 7.2m x 4.8m x 3.45 m
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
@@ -65,14 +65,14 @@ Despite the wind patterns, a light show occurs every 15 minutes. Comparing to th
 
 <div class="array">
   <div class="arrayItem"  >
-    <img src="/assets/tender/wind1.jpg" style="width:700px;"/>
+    <img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/wind1.jpg" style="width:700px;"/>
     <p>Different winds pattern.</p>
   </div>
     <div class="arrayItem" >
-    <img src="/assets/tender/wind2.jpg" style="width:700px;"/>
+    <img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/wind2.jpg" style="width:700px;"/>
   </div>
     <div class="arrayItem" >
-    <img src="/assets/tender/wind3.jpg" style="width:700px;"/>
+    <img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/wind3.jpg" style="width:700px;"/>
   </div>
 
 </div>
@@ -80,23 +80,23 @@ Despite the wind patterns, a light show occurs every 15 minutes. Comparing to th
 
 <div class="width withTitle">
 <span class="imgTitle">Control screen</span>
-<img style=""src="/assets/tender/control.jpg">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/tender/control.jpg">
 
 </div>
 
 <div class="height withTitle" >
 <span class="imgTitle">Liquid LED test</span>
-<img src="/assets/tender/light.jpg">
+<img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/light.jpg">
 
 </div>
 <div class="height  withTitle">
 <span class="imgTitle">Sensor test</span>
-  <img src="/assets/tender/sensor.gif">
+  <img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/sensor.gif">
 
   </div>
 
   <div class="width">
-<img src="/assets/tender/ocean1.jpg">
+<img src="https://storage.cloud.google.com/profolio_media/public/assets/tender/ocean1.jpg">
 </div>
 
 </div>

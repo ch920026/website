@@ -3,7 +3,7 @@ title: test
 artist: WHYIXD
 publishDate: 2022-07-02 00:00:00
 photography:
-img: /assets/code/cell.gif
+img: https://storage.cloud.google.com/profolio_media/public/assets/code/cell.gif
 img_alt: Iridescent ripples of a bright blue and pink liquid
 photo: YHLAA
 size: 7 x 5 x 7 m
@@ -37,11 +37,11 @@ tags:
 <div class="gallery" style="    margin-top:0px;">
 
 <div class="height  withTitle">
-<img style=""src="/assets/code/cell/cell.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/code/cell/cell.gif">
 </div>
 
 <div class="height  withTitle">
-<img style=""src="/assets/code/cell/cell2.gif">
+<img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/code/cell/cell2.gif">
 </div>
 
 </div>
