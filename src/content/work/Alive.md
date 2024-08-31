@@ -31,10 +31,10 @@ The control panel includes one microcontroller unit, power driver for high-volta
 
 <div class="array">
   <div class="arrayItem"  >
-    <img src="/assets/alive/pcb1.jpg" style="height:300px; margin:15px;"/> 
-        <img src="/assets/alive/pcb2.jpg" style="height:300px; margin:15px;"/>
-        <img src="/assets/alive/pcb4.jpg" style="height:300px; margin:15px;"/>
-        <img src="/assets/alive/wire2.jpg" style="height:300px; margin:15px;"/>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb1.jpg" style="height:300px; margin:15px;"/> 
+        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb2.jpg" style="height:300px; margin:15px;"/>
+        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb4.jpg" style="height:300px; margin:15px;"/>
+        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/wire2.jpg" style="height:300px; margin:15px;"/>
 
   </div>
 </div>
@@ -48,37 +48,37 @@ The SMD LEDs embedded within the printed metal represent the lights inside house
 
 <div class="width withTitle" >
 <span class="imgTitle">Circuit Diagram</span>
-<img style=""src="/assets/alive/circuit.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/circuit.jpg">
 
 </div>
 
 <div class="height  withTitle">
 <span class="imgTitle">Light Design</span>
-<img style=""src="/assets/alive/light.gif">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/light.gif">
 </div>
 
 <div class="height  withTitle">
 <span class="imgTitle">PCB 2nd Version</span>
-<img style=""src="/assets/alive/pcbv2.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcbv2.jpg">
 
   </div>
   <div class="height withTitle">
   <span class="imgTitle">PCB 2nd Version</span>
-<img style=""src="/assets/alive/pcbv2-2.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcbv2-2.jpg">
 </div>
 
   <div class="height">
-<img style=""src="/assets/alive/assemble.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/assemble.jpg">
 </div>
 <div class="width ">
-<img style=""src="/assets/alive/alive2.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/alive2.jpg">
 
 </div>
   <div class="height">
-<img style=""src="/assets/alive/alive3.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/alive3.jpg">
 </div>
   <div class="height">
-<img style=""src="/assets/alive/alive4.jpg">
+<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/alive/alive4.jpg">
 </div>
 
 </div>
