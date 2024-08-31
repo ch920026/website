@@ -48,7 +48,7 @@ var a=entry.data.password;
             sub={entry.data.artist}
             align="start"
             link={entry.data.artistSite}
-          >
+          >   
             <div class="details">
               <div
                 class="stack"
@@ -161,7 +161,14 @@ var a=entry.data.password;
         const btn = document.getElementById("password-btn");
         const wrap =document.getElementById("hide");
         const article =document.getElementById("pass");
-        const href=window.location.href.split("/").pop();
+        const arr=window.location.href.split("/");
+        var href;
+        if(arr[arr.length-1]==null)
+          href=arr[arr.length-2];
+        else
+          href=arr[arr.length-1];
+        
+        console.log(href);
     
        if(authList[href]){
           article.remove();
