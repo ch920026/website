@@ -2,7 +2,7 @@
 title: Acoustic Mirror
 artist: 404 not found
 publishDate: 2024-01-21 00:00:00
-img: https://storage.cloud.google.com/profolio_media/public/assets/acoustic.jpg
+img: https://storage.googleapis.com/profolio_media/public/assets/acoustic.jpg
 img_alt: Acoustic Mirror
 size: 10 m x 7 m x 6 m
 photo: 404 not found
@@ -21,7 +21,7 @@ Inspired by the shape of these historic mirrors, the artist attempted to recreat
 
 <div class="happy">
   <div class="bdcard">
-    <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic1.jpg" style="width:400px;"/>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic1.jpg" style="width:400px;"/>
   </div>
 <div class="bdtext">
 <div>
@@ -45,43 +45,43 @@ The installation was exhibited for almost two months and performed smoothly thro
 
   <div class="width withTitle">
   <span class="imgTitle">Control Plan</span>
-  <img style=""src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/plan.jpg">
+  <img style=""src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/plan.jpg">
   </div>
 
   <div class="height withTitle" >
   <span class="imgTitle">Structure</span>
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/const.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/const.jpg">
   </div>
 
   <div class="height">
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/const1.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/const1.jpg">
   </div>
 
   <div class="height  withTitle">
   <span class="imgTitle">Wiring</span>
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/wire.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/wire.jpg">
   </div>
 
   <div class=" withTitle">
   <span class="imgTitle">Light Testing</span>
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/test10.gif">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/test10.gif">
   </div>
 
   <div class="width  withTitle">
   <span class="imgTitle">Light Testing</span>
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/all.gif">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/all.gif">
   </div>
 
   <div class="height">
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/done.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/done.jpg">
   </div>
 
   <div class="height">
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/done1.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/done1.jpg">
   </div>
 
    <div class="width">
-  <img src="https://storage.cloud.google.com/profolio_media/public/assets/acoustic/show.jpg">
+  <img src="https://storage.googleapis.com/profolio_media/public/assets/acoustic/show.jpg">
   </div>
 
 </div>

@@ -2,7 +2,7 @@
 title: Alive "#1:" Beyond the Edge
 artist: WHYIXD
 publishDate: 2023-06-02 00:00:00
-img: https://storage.cloud.google.com/profolio_media/public/assets/alive/Alive1.jpg
+img: https://storage.googleapis.com/profolio_media/public/assets/alive/Alive1.jpg
 img_alt: flower
 photo: MaxiHo
 size: 695mm x 728mm x 154mm
