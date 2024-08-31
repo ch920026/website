@@ -86,18 +86,22 @@ const { title, description } = Astro.props;
                     alt="Chen Hsi"
                     width="480"
                     height="620"
-                    style="border-radius: 1.5rem;"
+                    style="border-radius: 1.5rem; "
                     src="https://storage.googleapis.com/profolio_media/public/assets/portrait.jpg"
                   />
                 </Hero>
               </header>
             </div>
-
+            <Hero
+                  title=""
+                  tagline=""
+                  align="start"
+                >
             <main class="wrapper stack gap-20 lg:gap-48">
               <section class="section with-background with-cta">
                 <header class="section-header stack gap-2 lg:gap-4">
                   <h3>Selected Work</h3>
-                  <div style="  font-size:26px; width:60%;">
+                  <div style="  font-size:--text-md; width:60%; margin:auto;">
                     Take a look below at some of my featured work for clients
                     and my company from the past few years.
                   </div>
@@ -119,7 +123,7 @@ const { title, description } = Astro.props;
                   class="cta"
                   style="width:20%; margin:60px 30px; float:right; "
                 >
-                  <CallToAction href="/work/">
+                  <CallToAction href="website/work/">
                     View All
                     <Icon icon="arrow-right" size="1.2em" />
                   </CallToAction>
@@ -129,7 +133,7 @@ const { title, description } = Astro.props;
               <section class="section with-background with-cta">
                 <header class="section-header stack gap-2 lg:gap-4">
                   <h3>Creative Coding</h3>
-                  <div style="  font-size:26px; width:60%; margin-bottom:50px;">
+                  <div style="  font-size:--text-md; width:60%; margin-bottom:50px;  margin:auto;">
                     These are some of the works I've created using programming.
                   </div>
                 </header>
@@ -142,14 +146,14 @@ const { title, description } = Astro.props;
                   class="cta"
                   style="width:20%; margin:60px 30px; float:right; "
                 >
-                  <CallToAction href="/coding/">
+                  <CallToAction href="website/coding/">
                     View All
                     <Icon icon="arrow-right" size="1.2em" />
                   </CallToAction>
                 </div>
               </section>
             </main>
-
+          </Hero>
             <ContactCTA />
           </div>
         </div>

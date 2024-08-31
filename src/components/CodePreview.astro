@@ -12,7 +12,10 @@ const { img, url = "" } = Astro.props;
 
 <style>
   .imgcard {
-    gap: 0.1rem;
+    display: grid;
+    gap: 0.1rem; 
+
+    grid-template: auto 1fr / auto 1fr;
 
     grid-column: span 1;
     grid-row: span 1;
@@ -22,6 +25,11 @@ const { img, url = "" } = Astro.props;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: box-shadow var(--theme-transition);
+
+    height: 12rem;
+
+
+
   }
 
   .card:hover {
