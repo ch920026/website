@@ -9,7 +9,8 @@ export default defineConfig({
     react(),
     tailwind(),
   ],
-  site: `https://www.christophermarkus.com`,
+  site: `https:/ch920026.github.io`,
+  base: "/website",
   output: "static",
   outDir: "./docs",
   build: {
