@@ -161,7 +161,7 @@ function moveCamera() {
 //
 function fbx() {
   const loader = new FBXLoader();
-  loader.load("/astroChen.fbx", function (object) {
+  loader.load("/website/astroChen.fbx", function (object) {
     mixer = new THREE.AnimationMixer(object);
 
     const action = mixer.clipAction(object.animations[0]);

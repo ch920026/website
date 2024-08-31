@@ -112,7 +112,7 @@ function init() {
   const material = new THREE.ShaderMaterial({
     uniforms: {
       color: { value: new THREE.Color(0xffffff) },
-      pointTexture: { value: new THREE.TextureLoader().load("/k.png") },
+      pointTexture: { value: new THREE.TextureLoader().load("/website/k.png") },
 
       time: { value: 1.0 },
       angle: { value: 0.0 },
@@ -201,10 +201,8 @@ function render() {
     t = t * 0.998;
     if (t < 0.25) {
       t = t * 0.996;
-    
     }
     if (t < 0.1) {
-
       t = t * 0.99;
       document.getElementById("showAfter").style.display = "flex";
     }
@@ -216,22 +214,22 @@ function render() {
   }
   if (loaded) {
     var speedR = 11;
-    if(inAngle>6&&inAngle<9){
-        astronutAngle+=0.01;
-
+    if (inAngle > 6 && inAngle < 9) {
+      astronutAngle += 0.01;
     }
     if (inAngle > 8) {
-
       speedR = 6;
       astronutModel.rotation.z = inAngle / 3;
       astronutModel.rotation.x = inAngle / 10;
-   
     } else {
       astronutModel.rotation.z = -1.1;
       astronutModel.rotation.x = 0;
     }
-    astronutModel.position.z = 0 + (270 + 0) * (Math.cos(-0.33 + (inAngle+ astronutAngle) / speedR) + 0.0);
-    astronutModel.position.x = (270 + 0) * Math.sin(-0.33 + (inAngle+ astronutAngle) / speedR);
+    astronutModel.position.z =
+      0 +
+      (270 + 0) * (Math.cos(-0.33 + (inAngle + astronutAngle) / speedR) + 0.0);
+    astronutModel.position.x =
+      (270 + 0) * Math.sin(-0.33 + (inAngle + astronutAngle) / speedR);
 
     astronutModel.rotation.y = inAngle / speedR - 0.3;
   }
@@ -245,7 +243,7 @@ function render() {
 
 function fbx() {
   const loader = new FBXLoader();
-  loader.load("/astroChen.fbx", function (object) {
+  loader.load("/website/astroChen.fbx", function (object) {
     mixer = new THREE.AnimationMixer(object);
 
     const action = mixer.clipAction(object.animations[0]);
