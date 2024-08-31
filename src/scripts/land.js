@@ -16,6 +16,7 @@ let mixer;
 var tt;
 var playing = false;
 var stats;
+var starArray = [];
 let fbxAction;
 var darkTheme = false;
 const clock = new THREE.Clock();
@@ -29,6 +30,23 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({ color: 0xbb3311 });
 const torus = new THREE.Mesh(geometry, material);
+const theme = document.getElementById("darkLight");
+
+theme.addEventListener("click", () => {
+  darkTheme = document.documentElement.classList.contains("theme-dark");
+  if (!darkTheme) {
+    scene.background = new THREE.Color(0x1b242c);
+    for (let i = 0; i < 300; i++) {
+      starArray[i].material.color.setHex(0xffffff);
+    }
+  } else {
+    scene.background = new THREE.Color(0xffffff);
+    for (let i = 0; i < 300; i++) {
+      starArray[i].material.color.setHex(0xff0000);
+    }
+  }
+});
+
 scene.add(torus);
 
 Array(300).fill().forEach(addStar);
@@ -85,7 +103,6 @@ function animate() {
   torus.rotation.x += 0.01;
   torus.rotation.z += 0.01;
 
-
   // if (loaded) object.rotation.y += 0.0;
   controls.update();
   const delta = clock.getDelta();
@@ -104,12 +121,13 @@ function addStar() {
     .fill()
     .map(() => THREE.MathUtils.randFloatSpread(150));
   star.position.set(x, y, z);
+  starArray.push(star);
   scene.add(star);
 }
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
- console.log( t );
+
   if (t == 0) {
     // fbxAction.reset();
     fbxAction.stop();
@@ -129,7 +147,6 @@ function moveCamera() {
   if (loaded) {
     tt.position.z = 1 + t / 10;
     tt.position.y = -t * 0.05 - 3.5;
-
 
     torus.position.y = -t * 0.025 - 3.5;
     torus.position.x = -t * 0.03 - 3.5;

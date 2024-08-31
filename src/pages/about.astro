@@ -7,7 +7,7 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout title="About | Chen Hsi" description="About Chen Hsi">
   <div class="stack gap-20">
-    <main class="wrapper about">
+    <div class="pic">
       <Hero
         title="About"
         tagline="Hi, this is me. You can read below to learn more!"
@@ -19,9 +19,10 @@ import Hero from "../components/Hero.astro";
           alt="Chen Hsi "
         />
       </Hero>
-
+    </div>
+      <main class="wrapper about">
       <section>
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">Chen Hsi</h2>
         <div class="content">
           <p>
             Creative developer and installation engineer based in Taiwan, born
@@ -35,109 +36,205 @@ import Hero from "../components/Hero.astro";
       <section>
         <h2 class="section-title">Academic</h2>
         <div class="content">
-          <p>
-            2015-2020 Bachelor of Electrical Engineering National Taiwan
-            University
-          </p>
-          <p>
-            2019-2021 Networking and Multimedia Lab National Taiwan University
-          </p>
-
-          <p>
-            2020 Published “Towards Cost Effective Server Population Estimation:
-            A Case Study of Twitch” WWW Conference
-          </p>
+          <div class="rowedu">
+            <div class="time">2015-2020</div>
+            <div class="work">Bachelor of Electrical Engineering</div>
+            <div class="location">National Taiwan University</div>
+          </div>
+          <div class="rowedu">
+            <div class="time">2019-2021</div>
+            <div class="work">Networking and Multimedia Lab</div>
+            <div class="location">National Taiwan University</div>
+          </div>
+          <div class="rowedu">
+            <div class="time">2020</div>
+            <div class="work">Published "Towards Cost Effective Server Population Estimation: A Case Study of Twitch"</div>
+            <div class="location">WWW Conference</div>
+          </div>
         </div>
       </section>
+      
 
       <section>
         <h2 class="section-title">Work</h2>
         <div class="content">
-          <p>2022/3-2023/12 WHYIXD Engineer</p>
-          <p>2021/9-2021/12 Noise Kitchen Intern</p>
-
-          <p>2019/7-2020/7 Cresendo Lab Intern</p>
+          <div class="row">
+            <div class="time">2022/3-2023/12</div>
+            <div class="work">WHYIXD </div>
+            <div class="work">Engineer</div>
+            <div class="location">Taipei</div>
+          </div>
+          <div class="row">
+            <div class="time">2021/9-2021/12</div>
+            <div class="work">Noise Kitchen </div>
+            <div class="work">Intern</div>
+            <div class="location">Taipei</div>
+          </div>
+          <div class="row">
+            <div class="time">2019/7-2020/7</div>
+            <div class="work">Crescendo Lab </div>
+             <div class="work">Intern</div>
+            <div class="location">Taipei</div>
+          </div>
         </div>
       </section>
       <section>
-        <h2 class="section-title">Joined Work</h2>
+        <h2 class="section-title">Designed Projects</h2>
         <div class="content">
-          <p>2024 CHOU TAI CHUN 48x48 GAYA's Universe, Hualien</p>
-          <p>2024 Hsiangfu CHEN Customized Furniture, Taipei</p>
-          <p>
-            2024 Acoustic Mirror by 404 nf. Yue-Jing Lantern Festival, Tainan
-          </p>
-          <p>
-            2022 The Lathery Enfold by Hao Ni Liste Art Fair Basel, Switzerland
-          </p>
-          <p>
-            2022 Nothing to look for, how about you? by Yang Jie-Huai Next Art
-            Tainan ,Tainan
-          </p>
-          <p>
-            2021 Game of Life by Tim Wei 《LIVES: Life, Survival, Living》 Jut
-            Art Museum, Taipei
-          </p>
+          <div class="row">
+            <div class="time">2024</div>
+            <div class="work">我們與他們的連結</div>
+            <div class="artist">Chou Tai Chun</div>
+            <div class="location">48x48 GAYA's Universe, Hualien</div>
+          </div>
+          <div class="row">
+            <div class="time">2024</div>
+            <div class="work">Customized Furniture</div>
+            <div class="artist">Hsiangfu Chen</div>
+            <div class="location">Taipei</div>
+          </div>
+          <div class="row">
+            <div class="time">2024</div>
+            <div class="work">Acoustic Mirror</div>
+            <div class="artist">404 nf</div>
+            <div class="location">Yue-Jing Lantern Festival, Tainan</div>
+          </div>
+          <div class="row">
+            <div class="time">2023</div>
+            <div class="work">Dark Halo </div>
+            <div class="artist">Hello Bast</div>
+            <div class="location">Taoyuan</div>
+          </div>
+          <div class="row">
+            <div class="time">2022</div>
+            <div class="work">The Lathery Enfold </div>
+            <div class="artist">Hao Ni</div>
+            <div class="location">Liste Art Fair, Basel, Switzerland</div>
+          </div>
+          <div class="row">
+            <div class="time">2022</div>
+            <div class="work">Nothing to look for, how about you? </div>
+            <div class="artist">Yang Jie-Huai</div>
+            <div class="location">Next Art Tainan, Tainan</div>
+          </div>
+          <div class="row">
+            <div class="time">2021</div>
+            <div class="work">Game of Life by Tim Wei </div>
+            <div class="artist">Tim Wei</div>
+            <div class="location">LIVES: Life, Survival, Living, Jut Art Museum, Taipei</div>
+          </div>
         </div>
       </section>
+      
+      
     </main>
   </div>
 </BaseLayout>
 
 <style>
+  .pic{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if the height is defined) */
+  margin: 0 auto;
+  }
+  
+  .wrapper {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1 rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem 2.5rem;
+
+
+  grid-template-columns: 0.8fr 65% 0.5fr; 
+}
+
+img {
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.section-title {
+  grid-column-start: 1;
+  font-size: var(--text-l);
+  color: var(--gray-0);
+  margin-bottom: 1rem; /* Space between title and content */
+  margin-left:2rem;
+
+}
+
+section {
+  width: 80%; 
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--gray-200);
+
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.7fr 1fr 1.5fr; /* Adjusted to include artist column */
+  gap: 1.5rem; /* Space between the columns */
+}
+.rowedu {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr 1.5fr ; /* Adjusted to include artist column */
+  gap: 1.5rem; /* Space between the columns */
+}
+
+.time,
+.work,
+.artist, /* Added artist class */
+.location {
+  font-size: var(--text-md);
+  color: var(--gray-200);
+}
+
+.content :global(a) {
+  text-decoration: 1px solid underline transparent;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+  text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
   .about {
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
+    display: grid;
+    grid-template-columns: 0.8fr 65% 0.5fr;
+
   }
 
-  img {
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-md);
+  .about > :global(:first-child) {
+    grid-column-start: 2;
   }
 
   section {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    color: var(--gray-200);
+    display: contents;
+    font-size: var(--text-lg);
+  
   }
+}
 
-  .section-title {
-    grid-column-start: 1;
-    font-size: var(--text-xl);
-    color: var(--gray-0);
-  }
-
-  .content {
-    grid-column: 2 / 4;
-  }
-
-  .content :global(a) {
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
-  }
-
-  .content :global(a:hover),
-  .content :global(a:focus) {
-    text-decoration-color: currentColor;
-  }
-
-  @media (min-width: 50em) {
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 60% 1fr;
-    }
-
-    .about > :global(:first-child) {
-      grid-column-start: 2;
-    }
-
-    section {
-      display: contents;
-      font-size: var(--text-lg);
-    }
-  }
 </style>

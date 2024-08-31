@@ -179,7 +179,7 @@ function prepare() {
   }
 });
     btn?.addEventListener("click", async () => {
-      const password = input.value;
+      const password= (document.getElementById("password") as HTMLInputElement | null)?.value;
       const hash=md5(password);
       try {
 
