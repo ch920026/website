@@ -25,7 +25,7 @@ setScene();
 setLight();
 // obj();
 fbx();
-
+console.log(windowW);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);

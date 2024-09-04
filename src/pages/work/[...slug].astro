@@ -2,8 +2,6 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Wrapper from "../../components/Wrapper.astro";
-import ContactCTA from "../../components/ContactCTA.astro";
 import WorkTitle from "../../components/WorkTitle.astro";
 import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
@@ -50,14 +48,11 @@ var a=entry.data.password;
             link={entry.data.artistSite}
           >   
             <div class="details">
-              <div
-                class="stack"
-                style="  border-top: 1px solid var(--gray-0);
-              border-bottom: 1px solid var(--gray-0); width:35%;padding:20px 0px;"
-              >
+              <div class="stack infoForm">
                 <table>
                   <tbody>
-                    <col style="width:60%" />
+                    <col style="width:60%;" />  <!-- Adjusted width for the left column -->
+                    <col style="width:40%;" />
                     <tr>
                       <td>Artist:</td>
                       <td>{entry.data.artist}</td>
@@ -75,8 +70,6 @@ var a=entry.data.password;
                       <td>Photography:</td>
                       <td>{entry.data.photo}</td>
                     </tr>
-                
-  
                   </tbody>
                 </table>
               </div>
@@ -98,21 +91,13 @@ var a=entry.data.password;
         </div>
         <div class="inputBox">
         <input
-          id="password"
-          class="password"
-      
+          id="password" class="password"
           placeholder="Enter password"
           type="text"
           autocomplete="off"
           autofocus
         />
-        <button
-          id="password-btn"
-          class="bg-skin-full rounded-md
-          border border-skin-fill border-opacity-50 p-2
-          text-skin-base
-          hover:border-skin-accent"
-        >
+        <button id="password-btn">
           Submit
         </button>
         </div>
@@ -149,63 +134,8 @@ var a=entry.data.password;
     </div>
 
   </div>
-  <script>
-  
-    import { md5 } from 'js-md5';
-    var authList={"circularity":true,};
-    console.log("hi");
-    function prepare() {
-    
-        const input = document.getElementById("password");
-        const passwordSection= document.getElementById("Auth");
-        const btn = document.getElementById("password-btn");
-        const wrap =document.getElementById("hide");
-        const article =document.getElementById("pass");
-        const arr=window.location.href.split("/");
-        var href;
-        if(arr[arr.length-1]=="")
-          href=arr[arr.length-2];
-        else
-          href=arr[arr.length-1];
+  <script src="../../scripts/pass.js"></script>
 
-        console.log(href);
-    
-       if(authList[href]){
-          article.remove();
-          passwordSection.style.display = "Flex";
-        }
-        else{
-          passwordSection.remove();
-        }
-    
-      input?.addEventListener("keydown", async (event) => {
-      if (event.key === "Enter") {
-        // Trigger the same functionality as the button click
-        btn?.click(); // Simulate a button click
-        // Add your async logic here
-      }
-    });
-        btn?.addEventListener("click", async () => {
-          const password= (document.getElementById("password") as HTMLInputElement | null)?.value;
-          const hash=md5(password);
-          try {
-    
-           if(hash=="fc9dd304468e3bedac00efbe78bbef85"){
-            passwordSection.remove();
-            wrap.append(article);
-          }
-          else{
-            alert('wrong code');
-          }
-          } catch (e) {
-            alert("Incorrect password");
-          }
-        });
-      }
-    
-      prepare();
-      // document.addEventListener("astro:after-swap", prepare);
-      </script>
 </BaseLayout>
 
 <style>
@@ -219,21 +149,25 @@ var a=entry.data.password;
   }
   a {
     font-size: var(  --text-md);
-  position: relative;
-  text-decoration: none;
+    position: relative;
+    text-decoration: none;
+  }
+  #Auth {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 50vh; /* Full height of the viewport */
+    text-align: center; /* Center the text inside the container */
+    background-color: transparent; 
+  }
+
+.infoForm{
+  border-top: 1px solid var(--gray-0);
+  border-bottom: 1px solid var(--gray-0); 
+  width:75%;
+  padding:20px 0px;
 }
-#Auth {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 50vh; /* Full height of the viewport */
-  text-align: center; /* Center the text inside the container */
-  background-color: transparent; 
-
-}
-
-
 
 .passtext {
   margin-bottom: 10px; /* Add some space between the text and input */
@@ -299,11 +233,8 @@ a:hover::after {
   }
 .image_container{
 
-
-
     width: 100%;
     height: 40em;
-
     img {
         object-fit: cover;
         width: 100%;
@@ -378,6 +309,9 @@ a:hover::after {
   }
 
   @media (min-width: 50em) {
+    .infoForm{
+      width:35%;
+    }
     .back-link {
       display: block;
       align-self: flex-start;
@@ -395,5 +329,41 @@ a:hover::after {
     .content :global(blockquote) {
       font-size: var(--text-2xl);
     }
+  }
+
+  @media (max-width: 1000px) {
+    td {
+      text-align: left; /* Align text to the left */
+    }
+
+    col:nth-child(1) {
+      width: 40%; /* Left column width */
+    }
+
+    col:nth-child(2) {
+      width: 60%; /* Right column width */
+    }
+
+    .description {
+      font-size: var(--text-sm);
+      text-align: left;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h5 {
+      font-size: var(--text-lg);
+    }
+
+    a {
+      font-size: var(--text-sm);
+    }
+
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center; /* Centers the items horizontally */
+    }
+
   }
 </style>

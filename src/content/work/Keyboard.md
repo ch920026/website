@@ -1,11 +1,11 @@
 ---
-title: Emoticon board (⁎⁍̴̛ᴗ⁍̴̛⁎)
+title: Emoticon board
 artist: 64 Pan, Chen Hsi
 publishDate: 2024-07-02 00:00:00
 photography:
 img: https://storage.googleapis.com/profolio_media/public/assets/keyboard/ren.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
-photo: 64, Hsi
+photo: 64 Pan, Hsi
 size: 7*5*3 cm
 link: https://www.instagram.com/p/CMNTJrQHUj9/?igsh=MTg1ZmN1Ym1jaW0yeQ%3D%3D&img_index=1
 artistSite: https://www.instagram.com/64_pan/

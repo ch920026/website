@@ -15,7 +15,7 @@ const { align = "center", tagline, title, sub, link } = Astro.props;
     <h1 class="title">{title}</h1>
     {tagline && <p class="tagline">{tagline}</p>}
     <a href={link} target="_blank">
-      <h3 style="margin: 20px 0px 10px 10px;">By {sub}</h3></a
+      <h3 style="margin: 20px 0px 10px 10px;" class="artist">By {sub}</h3></a
     >
   </div>
 
@@ -33,9 +33,11 @@ const { align = "center", tagline, title, sub, link } = Astro.props;
     max-width: 37ch;
     margin-inline: auto;
   }
-
+.artist{
+  font-size: var(--text-xl);
+}
   .title {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     color: var(--gray-0);
   }
 
@@ -47,7 +49,9 @@ const { align = "center", tagline, title, sub, link } = Astro.props;
     .start {
       text-align: start;
     }
-
+    .artist{
+  font-size: var(--text-3xl);
+}
     .start .title,
     .start .tagline {
       margin-inline: unset;
