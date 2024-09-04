@@ -20,6 +20,7 @@ var starArray = [];
 let fbxAction;
 var darkTheme = false;
 const clock = new THREE.Clock();
+var windowW = window.innerWidth;
 setScene();
 setLight();
 // obj();
@@ -54,6 +55,8 @@ Array(300).fill().forEach(addStar);
 document.body.onscroll = moveCamera;
 animate();
 
+window.addEventListener("resize", onWindowResize);
+
 function setScene() {
   scene = new THREE.Scene();
 
@@ -71,6 +74,7 @@ function setScene() {
   camera.position.setZ(30);
   camera.position.y = 20;
   camera.position.x = 20;
+  camera.position.z = 50000 / windowW;
 
   renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector("#bg"),
@@ -141,7 +145,7 @@ function moveCamera() {
   }
 
   torus.position.x += 0.0001;
-  camera.position.z = t * -0.01 + 30;
+  camera.position.z = t * -0.01 + 50000 / windowW;
   camera.position.x = 20 + t * -0.0002;
   camera.rotation.y = t * -0.0002;
   if (loaded) {
@@ -189,6 +193,7 @@ function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
 
+  windowW = window.innerWidth;
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
