@@ -37,3 +37,17 @@ const projects = (await getCollection("work")).sort(
     <!-- <ContactCTA /> -->
   </div>
 </BaseLayout>
+<style>
+.wrapper {
+  width: 90%; /* 90% width by default */
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 50em) {
+  .wrapper {
+    width: 100%; /* Full width at 50em and above */
+  }
+}
+</style>

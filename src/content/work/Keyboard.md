@@ -15,7 +15,7 @@ description: |
   ヽ(́◕◞౪◟◕‵)ﾉ
 tags:
   - Programming
-  - Light and Movement Design
+  - Circuit Design
 ---
 
 <style>

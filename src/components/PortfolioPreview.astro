@@ -30,7 +30,7 @@ const { data, slug } = Astro.props.project;
     box-shadow: var(--shadow-sm);
     text-decoration: none;
     font-family: var(--font-brand);
-    font-size: var(--text-lg);
+    font-size: var(--text-sm);
     font-weight: 500;
     transition: box-shadow var(--theme-transition);
   }
@@ -60,6 +60,8 @@ const { data, slug } = Astro.props.project;
     .card {
       height: 22rem;
       border-radius: 1.5rem;
+      font-size: var(--text-lg);
+      
     }
 
     .title {

@@ -200,10 +200,10 @@ function render() {
   if (loaded) {
     t = t * 0.998;
     if (t < 0.25) {
-      t = t * 0.996;
+      t = t * 0.995;
     }
     if (t < 0.1) {
-      t = t * 0.99;
+      t = t * 0.98;
       document.getElementById("showAfter").style.display = "flex";
     }
     inAngle = inAngle + 0.01;

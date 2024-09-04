@@ -14,7 +14,9 @@ const { href } = Astro.props;
     display: flex;
     place-content: center;
     text-align: center;
-    padding: 0.56em 2em;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    padding: 0.56em 3.5em;
     gap: 0.8em;
     color: var(--accent-text-over);
     text-decoration: none;
@@ -24,13 +26,18 @@ const { href } = Astro.props;
     background: var(--accent-regular);
     box-shadow: var(--shadow-md);
     white-space: nowrap;
+    font-size: var(--text-sm);
+
   }
 
-  @media (min-width: 20em) {
+  @media (max-width: 15em) {
     a {
-      font-size: var(--text-lg);
+      font-size: var(--text-sm);
+      padding: 0.56em 3.5em;
     }
   }
+
+ 
 
   /* Overlay for hover effects. */
   a::after {
@@ -49,7 +56,7 @@ const { href } = Astro.props;
 
   @media (min-width: 50em) {
     a {
-      padding: 1.125rem 2.5rem;
+      padding: 1.125rem 1.5rem;
       font-size: var(--text-xl);
     }
   }

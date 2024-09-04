@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import CallToAction from "../components/CallToAction.astro";
 import Grid from "../components/Grid.astro";
-import Hero from "../components/Hero.astro";
+import IndexHero from "../components/IndexHero.astro";
 import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import CodePreview from "../components/CodePreview.astro";
@@ -63,16 +63,16 @@ const { title, description } = Astro.props;
       <div class="float">
         <div class="testt">
           <div class="stack gap-20 lg:gap-48">
-            <div class="wrapper stack gap-8 lg:gap-20">
+            <div class="wrapper stack gap-8 lg:gap-20 ">
               <header class="hero">
-                <Hero
+                <IndexHero
                   title="Hello, I'm Chen Hsi"
                   tagline="I am a Creative Developer currently based in Taiwan. My work spans art installations, generative arts, and the design of circuits and control systems."
                   align="start"
                 >
                   <div
                     class="roles"
-                    style="justify-content:flex-start; width:50%; margin:0;"
+
                   >
                     <Pill><Icon icon="code" size="1.33em" /> Coding</Pill>
                     <Pill>
@@ -89,10 +89,10 @@ const { title, description } = Astro.props;
                     style="border-radius: 1.5rem; "
                     src="https://storage.googleapis.com/profolio_media/public/assets/portrait.jpg"
                   />
-                </Hero>
+                </IndexHero>
               </header>
             </div>
-            <Hero
+            <IndexHero
                   title=""
                   tagline=""
                   align="start"
@@ -100,7 +100,7 @@ const { title, description } = Astro.props;
             <main class="wrapper stack gap-20 lg:gap-48">
               <section class="section with-background with-cta">
                 <header class="section-header stack gap-2 lg:gap-4">
-                  <h3>Selected Work</h3>
+                  <h3 class="title">Selected Work</h3>
                   <div class="descript" style="  font-size:--text-md;">
                     Take a look below at some of my featured work for clients
                     and my company from the past few years.
@@ -123,17 +123,20 @@ const { title, description } = Astro.props;
                   class="cta"
                   style="width:20%; margin:60px 30px; float:right; "
                 >
-                  <CallToAction href="website/work/">
+                  <CallToAction href="/website/work/">
+                    
                     View All
+                    <div>
                     <Icon icon="arrow-right" size="1.2em" />
+                    </div>
                   </CallToAction>
                 </div>
               </section>
 
               <section class="section with-background with-cta">
                 <header class="section-header stack gap-2 lg:gap-4">
-                  <h3>Creative Coding</h3>
-                  <div class="descript"style="  font-size:--text-md; margin-bottom:50px; ">
+                  <h3 class="title">Creative Coding</h3>
+                  <div class="descript"style="  font-size:--text-md;  ">
                     These are some of the works I've created using programming.
                   </div>
                 </header>
@@ -146,9 +149,11 @@ const { title, description } = Astro.props;
                   class="cta"
                   style="width:20%; margin:60px 30px; float:right; "
                 >
-                  <CallToAction href="website/coding/">
+                  <CallToAction href="/website/coding/">
                     View All
-                    <Icon icon="arrow-right" size="1.2em" />
+                    <div>
+                    <Icon icon="arrow-right" size="1.2em"  />
+                    </div>
                   </CallToAction>
                 </div>
               </section>
@@ -171,13 +176,51 @@ const { title, description } = Astro.props;
   margin-inline: auto;
   max-width: 50rem; /* 最大宽度限制在50rem */
   width: 90%;
+  font-size: var(--text-md);
+  background-color: var(--index-back);
+  border-radius: 1rem;
+  margin-bottom:30px;
+  padding: 0.5rem;
+}
+.title{
+
+font-size: var(--text-xl);
+}
+.roles{
+
+  display: flex;
+  justify-content: center; /* Centers pills horizontally */
+  align-items: center; /* Centers pills vertically */
+  width: 100%; /* Ensure the roles div takes full width */
+  margin: 0 auto; 
 }
 
 @media (min-width: 50em) {
+  .roles{
+
+    justify-content:flex-start; 
+    width:50%;
+     margin:0;
+  }
   .descript {
     text-align: left;
     margin-inline: unset;
     width: 50%; /* 使描述在宽屏时占据整个容器的宽度 */
+    font-size: var(--text-xl);
+    background-color: var(--index-back);
+    border-radius: 1rem;
+
+  }
+  .title{
+
+    font-size: var(--text-4xl);
   }
 }
+  @media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 </style>

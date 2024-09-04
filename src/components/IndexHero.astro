@@ -30,7 +30,7 @@ const { align = "center", tagline, title } = Astro.props;
 
   }
 .tagline{
-
+  background-color:var(--index-back);
   border-radius: 1rem;
   padding: 0.5rem;
 
@@ -54,6 +54,11 @@ const { align = "center", tagline, title } = Astro.props;
       text-align: start;
     }
 
+    .tagline{
+  background-color:var(--index-back);
+
+
+  }
     .start .title,
     .start .tagline {
       margin-inline: unset;

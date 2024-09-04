@@ -52,8 +52,8 @@ var a=entry.data.password;
             <div class="details">
               <div
                 class="stack"
-                style="  border-top: 1px solid  white;
-              border-bottom: 1px solid white; width:35%;padding:20px 0px;"
+                style="  border-top: 1px solid var(--gray-0);
+              border-bottom: 1px solid var(--gray-0); width:35%;padding:20px 0px;"
               >
                 <table>
                   <tbody>
@@ -233,6 +233,8 @@ var a=entry.data.password;
 
 }
 
+
+
 .passtext {
   margin-bottom: 10px; /* Add some space between the text and input */
   font-size: 25px; /* Adjust the font size */
@@ -315,7 +317,7 @@ a:hover::after {
     max-width: 60ch;
   }
   table {
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
     border-collapse: collapse;
     font-size: :15px;
   }
@@ -387,6 +389,9 @@ a:hover::after {
 
     }
 
+    table{
+    font-size: var(  --text-md);
+    }
     .content :global(blockquote) {
       font-size: var(--text-2xl);
     }
