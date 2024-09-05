@@ -41,14 +41,12 @@ When designing an installation with so many elements on such a large scale, two 
 
 </div>
 
-<p style="margin-top:50px;">The common protocols we use for light control are SPI and DMX. Considering the scale of the work (10*7*6 m), a differential signal (RS485) would be a reasonable choice. While SPI is convenient, it relies on each chip in series and performs poorly over long distances. Additionally, DMX is a widely used and mature technique. The crucial point now is to customize the searchlights with controlling chips, which is not a common requirement, as these searchlights are intended for daily use rather than stage lighting. After several trials and discussions with suppliers, I finally found a suitable factory that can help us integrate DMX chips inside the searchlights. Now, the 243 lights are ready to receive signals and perform.</p>
+<p style="margin-top:50px;">The common protocols for light control are SPI and DMX. Considering the scale of the work (10*7*6 m), a differential signal (RS485) would be a reasonable choice, since SPI performs poorly over long distances. The crucial point now is to customize the searchlights with controlling chips, which is not a common requirement, as these searchlights are intended for daily use rather than stage lighting. After several trials and discussions with suppliers, I finally found a suitable factory that can help us integrate DMX chips inside the searchlights. Now, the 243 lights are ready to receive signals and perform.</p>
 
 </div>
 </div>
 
-Power distribution, on the other hand, doesn't require advanced background knowledge; it relies solely on basic principles of physics. However, in practical applications, the wiring methods and placement of distribution boxes can be quite intricate. To mitigate noise interference, I separated the power and signal wires, and employed waterproof connectors in a backbone pattern. This approach significantly reduces the number of wires entering the boxes and also proves to be a suitable arrangement for 485 signals.
-
-The installation was exhibited for almost two months and performed smoothly throughout the entire exhibition period. It stands as one of my most successful designs.
+Power distribution, on the other hand, doesn't require advanced background knowledge; it relies solely on basic principles of physics. However, in practical applications, the wiring methods and placement of distribution boxes can be quite intricate. To mitigate noise interference, I separated the power and signal wires, and employed waterproof connectors in a backbone pattern. This approach significantly reduces the number of wires entering the boxes. The installation was exhibited for almost two months and performed smoothly throughout the entire exhibition period.
 
 <div class="gallery" style="    margin-top:100px;">
 
