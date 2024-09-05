@@ -78,7 +78,7 @@ Despite the wind patterns, a light show occurs every 15 minutes. Comparing to th
 
 </div>
 
-<div class="gallery" style="margin-top:100px;">
+<div class="ingallery" style="margin-top:100px;">
 
   <div class="width withTitle">
     <span class="imgTitle">Control screen</span>

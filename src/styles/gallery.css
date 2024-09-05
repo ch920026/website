@@ -56,7 +56,7 @@
 }
 .arrayItem img {
   width: auto;
-  height: 100%; /* 保持圖片寬高比 */
+  /* 保持圖片寬高比 */
   display: block;
   object-fit: cover;
 }
