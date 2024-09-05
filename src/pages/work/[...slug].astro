@@ -258,6 +258,9 @@ a:hover::after {
   .content {
     max-width: 105ch;
     margin-inline: auto;
+    font-size: var(--text-lg);
+    width:90%;
+    
   }
 
   .content > :global(* + *) {
@@ -309,6 +312,7 @@ a:hover::after {
   }
 
   @media (min-width: 50em) {
+
     .infoForm{
       width:35%;
     }
@@ -331,7 +335,9 @@ a:hover::after {
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 900px) {
+
+
     td {
       text-align: left; /* Align text to the left */
     }
@@ -364,6 +370,13 @@ a:hover::after {
       gap: 0.5rem;
       justify-content: center; /* Centers the items horizontally */
     }
+
+    .content {
+      /* text-align: justify; */
+      width:90%;
+      margin: 0 auto;
+      font-size: var(--text-sm);
+    } 
 
   }
 </style>

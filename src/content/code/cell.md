@@ -1,5 +1,5 @@
 ---
-title: test
+title: Voronoi Pattern
 artist: WHYIXD
 publishDate: 2022-07-02 00:00:00
 photography:

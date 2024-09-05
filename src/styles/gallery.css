@@ -1,66 +1,114 @@
-
-.happy{
+.happy {
   width: 1050px;
   margin: 50px auto;
 
   overflow: hidden; /* 避免長方框下面顯示不正常 */
 }
-.bdcard{
-  width:60%;
-  float:right; /* 圖片在左邊 */
+.bdcard {
+  width: 60%;
+  float: right; /* 圖片在左邊 */
   padding: 20px;
-   margin-top:70px;
+  margin-top: 70px;
 }
-.bdcard img{
+.bdcard img {
   display: block;
-  
-  width:100%;
+
+  width: 100%;
 }
-.bdtext{
-  float: left;  /* 文字在右邊 */
+.bdtext {
+  float: left; /* 文字在右邊 */
   width: 40%;
   padding: 20px 20px 0px 0px;
 }
-.arrayItem{
-  margin:10px 10px;
 
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 2px;
 }
-.img{
-  height:100%;
-  width:100%;
-  object-fit:cover;
-  margin:2px;
-
+.width {
+  grid-column: span 2;
 }
-.width{
-grid-column :span 2;
-
+.height {
+  grid-row: span 1.5;
 }
-.height{
-grid-row:span 1.5;
-
-}
-.withTitle{
-
-position:relative;
+.withTitle {
+  position: relative;
 }
 
-.gallery{
-  display:grid;
-  gap:10px;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-auto-flow: dense;
-
 }
 
-.imgTitle{
-   margin: 0.1rem;
-   /* color:black; */
-   padding: 0rem 0.2rem;
-    background: var(--gray-999);
-    
-    z-index: 1;
-    position: absolute;
+.ingallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自適應列寬 */
+  gap: 10px;
+}
+
+.arrayItem {
+  position: relative; /* 為子元素定位 */
+  margin: 3px;
+}
+.arrayItem img {
+  width: auto;
+  height: 100%; /* 保持圖片寬高比 */
+  display: block;
+  object-fit: cover;
+}
+.imgTitle {
+  margin: 0.1rem;
+  /* color:black; */
+  padding: 0rem 0.2rem;
+  background: var(--gray-999);
+
+  z-index: 1;
+  position: absolute;
   top: 8px;
   right: 10px;
+}
+
+@media (max-width: 900px) {
+  .happy {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .bdcard {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .bdtext {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2px;
+  }
+
+  .img {
+    margin: 1px;
+  }
+
+  .imgTitle {
+    top: 4px;
+    right: 5px;
+    font-size: 0.8rem;
+  }
+  .ingallery {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* 自適應列寬 */
+  }
 }

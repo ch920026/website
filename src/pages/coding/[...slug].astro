@@ -52,8 +52,8 @@ console.log(targetPosition);
             <div class=" gap-2 item" >
               <h1 class="title" >{entry.data.title}</h1>
             </div>
-            <div class="item" style="height:1rm;">
-              <div style="  display: flex; align-items: center; " >
+            <div class="item tool" style="height:1rm;">
+              <div  style="  display: flex; align-items: center; " >
                <h5 >Tools:</h5>
               </div>
               <div class="tags">
@@ -223,6 +223,27 @@ a:hover::after {
 
     .content :global(blockquote) {
       font-size: var(--text-2xl);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .wrapper{
+      width:95%;
+      margin: 0 auto;
+
+    }
+
+   h1{
+
+    font-size: var(--text-2xl);   
+    margin:5px;
+   }
+
+
+   .tool{
+
+    font-size: var(--text-xl);   
+    margin:0 10px 0 10px;
     }
   }
 </style>

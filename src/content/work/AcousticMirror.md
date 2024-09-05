@@ -14,6 +14,15 @@ tags:
   - Control System Design
 ---
 
+<style>
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
+
 ### About The Work
 
 During the Second World War, Britain constructed several colossal "acoustic mirrors" along its south and east coasts. These gigantic spherical mirrors, made with concrete, were designed to reflect the sound of approaching airplanes, enabling the British Army to pinpoint the enemies. Although these mirrors no longer serve their original purpose, they remain steadfast, evoking a sense of mystery and science fiction along today's coastline.

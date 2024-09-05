@@ -17,6 +17,15 @@ tags:
   - PCB Design
 ---
 
+<style>
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
+
 This work, created by artist Tim Wei, commemorates the famous mathematician John Horton Conway. It features 169 cubes arranged in a square, following the rules of Conway's Game of Life. The cubes continuously move back and forth according to the states, synchronized with sounds designed by the artist. The audience can interact with the installation by touching the pixels, altering their state (alive or dead) and triggering a chain reaction of changes.
 
 Technically, the challenging aspect is that all 169 cubes are equipped with sensors, which require a large number of input/output (IO) connections—a uncommon requirement. To address this, I used MOSFETs and matrix scanning to reduce the number of IO connections from 169 to 26. Then all the sensors can be detected within one microcontroller.

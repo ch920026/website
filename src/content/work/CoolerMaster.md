@@ -41,6 +41,15 @@ tags:
       width: 100%;
       height: 100%;
     }
+
+
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
+
   </style>
 
 ### About the Work
@@ -53,13 +62,14 @@ Cooler Master values maker culture deeply, with their slogan 'Make It Yours.' Em
 
 Each flower is controlled by a microcontroller and receives signals via Wi-Fi. Since the connection is one-way (from the computer to the flowers), we can't track the exact position of each flower. To address this, I developed a computer simulation system. The simulation includes 177 3D models, each programmed with realistic acceleration and motor speed parameters. This allows us to accurately predict the behavior of the real installation and send the correct signals at the right times.
 
-<div class="array"style="margin:50px 0px 0px 0px;">
-  <div class="arrayItem"  >
-  <img src="https://storage.googleapis.com/profolio_media/public/assets/Cooler/simu1.jpg" style="height:280px; margin:5px;"/>
-    <img src="https://storage.googleapis.com/profolio_media/public/assets/Cooler/flower.jpg" style="height:280px; margin:5px;"/> 
-      
-   <img src="https://storage.googleapis.com/profolio_media/public/assets/Cooler/panel.jpg" style="height:280px; margin:5px;"/>
+<div class="ingallery">
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/Cooler/simu1.jpg" />
   </div>
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/Cooler/flower.jpg" />
+  </div>
+
 </div>
 Control Panel and Simulation
 

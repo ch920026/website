@@ -19,27 +19,13 @@ tags:
 ---
 
 <style>
-     .embed-container {
-      --video--width: 1084;
-      --video--height: 666;
+  @media (max-width: 900px) {
 
-      position: relative;
-      padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
-      overflow: hidden;
-      max-width: 100%;
-      background: black;
+     h3 {
+      font-size: var(--text-lg);
     }
-
-    .embed-container iframe,
-    .embed-container object,
-    .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+  }
+</style>
 
 ### About the Work
 

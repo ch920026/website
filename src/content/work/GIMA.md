@@ -37,6 +37,13 @@ tags:
       width: 100%;
       height: 100%;
     }
+
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+    }
   </style>
 
 ### About the work
@@ -97,5 +104,6 @@ In this edition, Channels was invited to the Taiwan Golden Indie Music Award, th
 </div>
 
 </div>
-
+<div class='embed-container'>
 <iframe width="1060" height="615" src="https://www.youtube.com/embed/CeZs0PS-ilg?si=gqQkq4o73gwxTlR2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>

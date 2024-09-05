@@ -16,6 +16,15 @@ tags:
   - Control System Desgin
 ---
 
+<style>
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
+
 ### About the work
 
 Vicious Circularity is an art project by artist Ni Hao. Part of the project involves four scooters spinning simultaneously without riders. To achieve this, we had to design a structure and control system that is strong and reliable to ensure safety. For wireless connectivity, I chose Xbee as the communication method.

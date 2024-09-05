@@ -17,6 +17,15 @@ tags:
   - Light Design
 ---
 
+<style>
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
+
 ### About The Work
 
 "Alive" is a limited edition in-house installation that tries to capture the image of a city. A city, in essence, is an organic entity shaped by both human-made structures and natural elements such as plants. These two elements interact mutually, resulting in the dynamic appearance of a city. In this installation, printed metal and dried flowers serve as representations of artifacts and natural objects, respectively. The lights within the installation symbolize the passage of time, further enhancing the dynamic and living quality of the urban landscape
@@ -29,13 +38,18 @@ Also, the limited space available for the control panel necessitated the design 
 
 The control panel includes one microcontroller unit, power driver for high-voltage LEDs, and multiple SPI chips. The compact dimensions for the panel (100 mm\*150 mm\*23 mm) presented a challenge. Therefore, I invested considerable time arranging the position of connectors and ICs to ensure the wires could be organized and easily connected during assembly.
 
-<div class="array">
-  <div class="arrayItem"  >
-    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb1.jpg" style="height:300px; margin:15px;"/> 
-        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb2.jpg" style="height:300px; margin:15px;"/>
-        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb4.jpg" style="height:300px; margin:15px;"/>
-        <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/wire2.jpg" style="height:300px; margin:15px;"/>
-
+<div class="ingallery">
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb1.jpg" /> 
+  </div>
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb2.jpg" />
+  </div>
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/pcb4.jpg" />
+  </div>
+  <div class="arrayItem">
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/alive/wire2.jpg"/>
   </div>
 </div>
 

@@ -15,13 +15,7 @@ tags:
 ---
 
 <style>
-  .gallery{
-  display:grid;
-  gap:10px;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  grid-auto-flow: dense;
 
-}
     .embed-container {
       --video--width: 1084;
       --video--height: 666;
@@ -42,6 +36,13 @@ tags:
       width: 100%;
       height: 100%;
     }
+
+  @media (max-width: 900px) {
+
+     h3 {
+      font-size: var(--text-lg);
+    }
+  }
 
 </style>
 
@@ -65,41 +66,41 @@ Despite the wind patterns, a light show occurs every 15 minutes. Comparing to th
 
 <div class="array">
   <div class="arrayItem"  >
-    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind1.jpg" style="width:700px;"/>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind1.jpg" />
     <p>Different winds pattern.</p>
   </div>
     <div class="arrayItem" >
-    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind2.jpg" style="width:700px;"/>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind2.jpg" />
   </div>
     <div class="arrayItem" >
-    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind3.jpg" style="width:700px;"/>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind3.jpg"/>
   </div>
 
 </div>
-<div class="gallery" style="    margin-top:100px;">
 
-<div class="width withTitle">
-<span class="imgTitle">Control screen</span>
-<img style=""src="https://storage.googleapis.com/profolio_media/public/assets/tender/control.jpg">
+<div class="gallery" style="margin-top:100px;">
 
-</div>
+  <div class="width withTitle">
+    <span class="imgTitle">Control screen</span>
+    <img style=""src="https://storage.googleapis.com/profolio_media/public/assets/tender/control.jpg">
+  </div>
 
-<div class="height withTitle" >
-<span class="imgTitle">Liquid LED test</span>
-<img src="https://storage.googleapis.com/profolio_media/public/assets/tender/light.jpg">
+  <div class="withTitle " >
+    <span class="imgTitle">Liquid LED test</span>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/light.jpg">
+  </div>
 
-</div>
-<div class="height  withTitle">
-<span class="imgTitle">Sensor test</span>
-  <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/sensor.gif">
-
+  <div class="withTitle">
+    <span class="imgTitle">Sensor test</span>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/sensor.gif">
   </div>
 
   <div class="width">
-<img src="https://storage.googleapis.com/profolio_media/public/assets/tender/ocean1.jpg">
-</div>
+    <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/ocean1.jpg">
+  </div>
 
 </div>
+
 <div class='embed-container'>
 <iframe src="https://player.vimeo.com/video/726610150?h=3646606fd&autoplay=1&muted=1"  frameborder="0"  allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
