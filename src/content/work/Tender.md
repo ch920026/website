@@ -64,7 +64,7 @@ I designed three light patterns corresponding to different wind intensities: bre
 
 Despite the wind patterns, a light show occurs every 15 minutes. Comparing to the organic and random style of wind patterns, I designed the show with a relatively electric and digital style. Utilizing simple geometric patterns, the lights flash rapidly and consistently.
 
-<div class="array">
+<div class="ingallery">
   <div class="arrayItem"  >
     <img src="https://storage.googleapis.com/profolio_media/public/assets/tender/wind1.jpg" />
     <p>Different winds pattern.</p>
