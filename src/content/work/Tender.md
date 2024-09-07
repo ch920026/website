@@ -58,7 +58,7 @@ For this installation WHYIXD cooperated with Liquidleds Lighting Corporation. Th
 
 ### Light Deisgn
 
-The installation equipped with wind speed and direction sensor. The sensed data will transfer through the microcontroller and then be sent to the computer. The computer program (Processing) will then generate the corresponding light pattern in real time. The light will start flowing in the same direction as the wind.
+The installation equipped with wind speed and direction sensor. The sensed data will transfer to the computer and the program (Processing) will then generate the corresponding light pattern in real time. The light will start flowing in the same direction as the wind.
 
 I designed three light patterns corresponding to different wind intensities: breeze, moderate, and strong. The breeze pattern features thin lines, mimicking the subtle sensation of a gentle breeze passing through. As the wind strengthens to a moderate level, the patterns transition into gradients that cover the entire area, creating a sense of being enveloped by a vast expanse of wind. Finally, for strong winds, numerous rapidly moving particles are employed to simulate the chaotic sensation of a powerful wind disrupting everything in its path.
 
